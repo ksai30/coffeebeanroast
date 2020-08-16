@@ -16,9 +16,9 @@
         <div id="SelectImage" style="width:622px;">
             <table style="width:100%">
                 <tr>
-                    <td width="15%"><em>Load image:</em></td>
-                    <td width="61%"><input style="float:left;" id="uploadImage" type="file" name="myPhoto" onchange="loadImageFile();" /></td>
-                    <td width="24%" align="center">
+                    <td id="load-image"><em>Load image:</em></td>
+                    <td id="upload-image"><input style="float:left;" id="uploadImage" type="file" name="myPhoto" onchange="loadImageFile();" /></td>
+                    <td id="rolling">
                         <div id="pointerMode"></div>
                     </td> 
                 </tr>
@@ -33,15 +33,15 @@
         <div id="tblButtons" style="width:622px;">
              <table style="width:100%">
                  <tr>
-                     <td width="80%"><em>Coffee Bean Roast Colour:</em></td>
-                     <td width="20%" align="left">
-                         <button title="New comment" style="background-color:white" onClick="clearUserComments()"><img src="./img/new_note_button.png"/></button>
-                         <button title="Copy comment to clipboard" style="background-color:white" onClick="copyComments()"><img src="./img/copy_note_button.png"/></button>
+                     <td id="roast-colour-header"><em>Coffee Bean Roast Colour:</em></td>
+                     <td id="roast-colour-comments">
+                         <button title="New comment" style="background-color:white" onClick="clearUserComments()"><img src="./img/new_note_button.png" alt="Click to clear current comment"/></button>
+                         <button title="Copy comment to clipboard" style="background-color:white" onClick="copyComments()"><img src="./img/copy_note_button.png" alt="Click to copy comment to clipboard"/></button>
                      </td>
                  </tr>
              </table>
          </div>
-         <div id="Comments" style="width:622px;" align="center">
+         <div id="Comments" style="width:622px;">
              <textarea id="userComments" rows="6" cols="75"></textarea>
          </div>
          <div id="dvResultsTable" style="width:622px;">
@@ -49,7 +49,7 @@
          <br />
        </main>
        <footer id="dvInformation">
-		<p>
+		<p id="info-text">
 			<small>-----</small>
 			<br />
 			<small>To see the spectrum of coffee bean roast colours, see the <a href="https://en.wikipedia.org/wiki/Coffee_roasting#Roasts" target="_blank">Wikipedia page for "Coffee Roasting"</a>.</small>
@@ -57,6 +57,8 @@
 			<small>To view a wide array of royalty-free images of coffee beans, please see: <a href="https://unsplash.com/s/photos/coffee-beans" target="_blank">Unsplash.com</a>.</small>
 			<br /><br />
 			<small>For <b><i>Fairtrade</i></b> Coffee in Aotearoa New Zealand, visit <a href="https://fairtrade.org.nz/en-nz/fairtrade-products/coffee" target="_blank">the Fairtrade website</a> for further information.</small>
+			<br /><br />
+            <small>For something that is definitely not a rickroll, <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">click here</a> (it is).</small>
 			<br /><br />
            </p>
        </footer>
